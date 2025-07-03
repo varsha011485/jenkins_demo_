@@ -12,7 +12,7 @@ def is_prime(n):
             return False
     return True
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     try:
         num = int(sys.argv[1])
         if is_prime(num):
@@ -23,4 +23,4 @@ if _name_ == "_main_":
             sys.exit(1)  # Failure
     except (IndexError, ValueError):
         print("Please provide a valid integer.")
-        sys.exit(2)  # Invalid input
+        sys.exit(2)  # Invalid input
